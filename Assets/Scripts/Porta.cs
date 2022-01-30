@@ -15,8 +15,7 @@ public class Porta : MonoBehaviour
     [SerializeField] Text labelLupoWin;
     [SerializeField] Animator cancello;
 
-    [SerializeField] GameObject[] ActivateOnWin;
-    [SerializeField] GameObject[] DeactivateOnWin;
+    public GameOver gameOver;
 
     public float timeToOpen = 4;
 
@@ -66,6 +65,11 @@ public class Porta : MonoBehaviour
             default:
                 break;
         }
+        if (ContaPecore() <= 1)
+        {
+            gameOver.SetGameOver();
+        }
+            
     }
 
     public int GetPunteggio()
@@ -73,15 +77,10 @@ public class Porta : MonoBehaviour
         return score;
     }
 
-    public void GameOver()
+    int ContaPecore()
     {
-        foreach (GameObject go in ActivateOnWin)
-        {
-            go.SetActive(true);
-        }
-        foreach (GameObject go in DeactivateOnWin)
-        {
-            go.SetActive(false);
-        }
+        Transform p = GameObject.Find("Pecore").transform;
+        return p.childCount;
     }
+
 }

@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
     public TMP_Text timeText;
-
+    public GameOver gameOver;
 
 
     private void Start()
@@ -30,7 +30,7 @@ public class Timer : MonoBehaviour
             else
             {
                 Debug.Log("Time has run out!");
-                FindObjectOfType<Porta>().GameOver();
+                gameOver.SetGameOver();
                 timeRemaining = 0;
                 timerIsRunning = false;
             }

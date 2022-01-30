@@ -12,7 +12,7 @@ public class PlayRandomSound : MonoBehaviour
         PlayRandom();
     }
 
-    void PlayRandom()
+    public void PlayRandom()
     {
         int i = Random.Range(0, Clips.Length - 1);
         float p = Random.Range(.8f, 1.2f);

@@ -10,29 +10,9 @@ public class AudioSettings : MonoBehaviour
     public void SetSFX(float f)
     {
         audioMixer.SetFloat("SFXVolume", f);
-        SaveSFX();
     }
     public void SetMusic(float f)
     {
         audioMixer.SetFloat("MusicVolume", f);
-        SaveMusic();
-    }
-
-    void SaveSFX()
-    {
-
-    }
-    void SaveMusic()
-    {
-
-    }
-
-    public void LoadSFX()
-    {
-
-    }
-    public void LoadMusic()
-    {
-
     }
 }
