@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33500324732642854}
   - component: {fileID: 23839352597934496}
   - component: {fileID: 95808738990443652}
+  - component: {fileID: 7782744933941726524}
   m_Layer: 0
   m_Name: TreePine
   m_TagString: Untagged
@@ -99,3 +100,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7782744933941726524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907765426554200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5deb2023618b953479cafd1ca44fa368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeSize: 1
+  minSize: 1
+  maxSize: 1.5
+  changeRot: 1
